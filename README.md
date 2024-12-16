@@ -1,70 +1,126 @@
-# Taller-de-Bootstrap
-Taller de Bootstrap, para aprender a utilizar el framework en 8 clases
+## **Clase 1: Introducción a Bootstrap**
+**Duración:** 2 horas  
+**Objetivo:** Comprender qué es Bootstrap, cómo instalarlo y aprender a utilizar su sistema de rejilla (Grid System) para crear un diseño responsivo básico.  
 
-Clase 1: Introducción a Ren'Py y las Novelas Visuales
-Duración: 2 horas
+---
 
-Objetivo de la clase
-Familiarizar a los estudiantes con el concepto de novelas visuales, presentar la herramienta Ren'Py, y configurar el entorno de trabajo para iniciar su primer proyecto.
+### **1. Conceptos Básicos (20 minutos)**
+#### **¿Qué es Bootstrap?**  
+- Bootstrap es una biblioteca de código abierto para diseñar sitios web responsivos y móviles de manera rápida.  
+- Ofrece:
+  - Un sistema de rejilla flexible.
+  - Componentes predefinidos como botones, formularios y menús.
+  - Clases utilitarias para espaciado, colores, alineación, etc.  
 
-Contenido
-1.1 ¿Qué es Ren'Py y qué son las novelas visuales?
-Definición de novelas visuales:
+#### **Ventajas de usar Bootstrap:**  
+- Acelera el desarrollo.
+- Garantiza consistencia en el diseño.
+- Es compatible con navegadores modernos.
+- Ideal para diseño responsivo.
 
+#### **Ejemplos de uso:**  
+- Sitios web corporativos, tiendas en línea, portfolios personales.
 
-Breve historia del género en Japón y su impacto global.
-Ejemplos de novelas visuales famosas (Doki Doki Literature Club, Steins;Gate, Phoenix Wright).
-Elementos clave: narrativa, elecciones interactivas, multimedia (arte, música).
-Introducción a Ren'Py:
+---
 
+### **2. Instalación y Configuración (30 minutos)**
+#### **Formas de integrar Bootstrap en tu proyecto:**
+1. **CDN (Content Delivery Network):**  
+   - Ideal para empezar rápidamente.  
+   - Incluye las siguientes líneas en el `<head>` de tu archivo HTML:
+     ```html
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Bootstrap Example</title>
+       <!-- Bootstrap CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     </head>
+     <body>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     </body>
+     </html>
+     ```
 
-Software gratuito y de código abierto para crear novelas visuales.
-Comunidad activa y recursos en línea.
-Comparación breve con otras herramientas como Unity o Twine.
-Actividad en clase:
- Discutir ejemplos de novelas visuales conocidas. Los estudiantes mencionan sus experiencias con este formato (si las tienen).
+2. **Descarga local:**  
+   - Descarga los archivos desde [getbootstrap.com](https://getbootstrap.com).  
+   - Guarda los archivos en tu proyecto y enlázalos como cualquier hoja de estilo o script.
 
-1.2 Instalación y configuración del entorno de trabajo
-Descarga de Ren'Py:
+3. **Usar un gestor de paquetes:**  
+   - Instalar con npm:  
+     ```bash
+     npm install bootstrap
+     ```
 
+#### **Primer archivo HTML con Bootstrap (Actividad guiada):**
+- Crea un archivo `index.html`.
+- Copia el siguiente código básico:
+  ```html
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mi Primera Página con Bootstrap</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+      <h1 class="text-center mt-5">¡Hola, Bootstrap!</h1>
+      <p class="text-center">Este es mi primer sitio con diseño responsivo.</p>
+  </body>
+  </html>
+  ```
 
-Ir al sitio oficial (renpy.org) y descargar la última versión.
-Instalación en sistemas operativos Windows, macOS o Linux.
-Preparar el entorno:
+---
 
+### **3. Sistema de Rejilla (Grid System) (50 minutos)**  
+#### **¿Qué es el sistema de rejilla?**  
+- Es un sistema basado en 12 columnas para crear diseños responsivos.  
+- Permite distribuir contenido en filas y columnas que se adaptan a diferentes tamaños de pantalla.  
 
-Estructura de carpetas dentro de un proyecto de Ren'Py.
-Configuración inicial del software.
-Complementos útiles:
+#### **Clases principales:**
+- **`.container`**: Contenedor principal para centrar el contenido.
+- **`.row`**: Define una fila dentro del contenedor.
+- **`.col`**: Define una columna en la fila.
+  - Ejemplo: `.col-6` ocupa 6 de las 12 columnas.  
 
+#### **Breakpoints en Bootstrap:**  
+Bootstrap usa breakpoints para adaptar el diseño:  
+- `col-` para dispositivos pequeños.
+- `col-sm-`, `col-md-`, `col-lg-`, y `col-xl-` para dispositivos más grandes.
 
-Instalación de un editor de texto recomendado, como Visual Studio Code.
-Actividad en clase:
- Seguir una guía paso a paso para instalar Ren'Py en sus computadoras.
+#### **Ejercicio práctico: Crear un diseño básico con rejilla**
+1. Copia el siguiente código en tu archivo HTML:
+   ```html
+   <div class="container">
+       <div class="row">
+           <div class="col-4 bg-primary text-white text-center">Columna 1</div>
+           <div class="col-4 bg-secondary text-white text-center">Columna 2</div>
+           <div class="col-4 bg-success text-white text-center">Columna 3</div>
+       </div>
+   </div>
+   ```
+2. Modifica las clases para observar cómo cambian las columnas en diferentes tamaños de pantalla.
 
-1.3 Creación de un proyecto básico
-Iniciar un nuevo proyecto:
+---
 
+### **4. Actividad Final (20 minutos)**
+**Desafío:** Crea una página que incluya:  
+1. Un encabezado centrado con Bootstrap.  
+2. Una fila con tres columnas de diferentes colores.  
+3. Añade márgenes y espaciado utilizando clases utilitarias como `mt-3`, `mb-5`, etc.
 
-Selección del nombre y idioma del proyecto.
-Estructura básica de un proyecto generado automáticamente por Ren'Py.
-Primer vistazo al archivo script.rpy:
+---
 
+### **5. Tarea para Casa**
+- Lee la documentación oficial sobre el sistema de rejilla: [Documentación de Bootstrap Grid](https://getbootstrap.com/docs/5.3/layout/grid/).  
+- Experimenta creando un diseño responsivo con 2 filas y varias columnas.
 
-Uso de etiquetas (label) para organizar las historias.
-Estructura mínima de una novela visual: texto y narración.
-Personalizar el texto de bienvenida del juego:
+---
 
-
-Modificar el script predeterminado para mostrar texto propio.
-Actividad en clase:
- Los estudiantes crean su primer proyecto y personalizan el texto inicial.
-
-Material de apoyo
-Guía de instalación: Instrucciones paso a paso con capturas de pantalla.
-Ejemplo básico: Código prehecho para explorar etiquetas y texto en Ren'Py.
-Recursos adicionales: Enlaces a tutoriales básicos y la documentación oficial.
-
-Tareas para casa
-Escribir un pequeño diálogo entre dos personajes y agregarlo al proyecto creado en clase.
-Investigar tres novelas visuales y describir cómo utilizan elecciones interactivas.
+### **Materiales y Recursos**
+- [Enlace a la documentación oficial de Bootstrap](https://getbootstrap.com).  
+- Plantilla inicial del taller (se puede proporcionar un archivo zip con la estructura básica).  
+😊
