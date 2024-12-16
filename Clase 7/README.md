@@ -99,8 +99,4 @@ Aprender a sobrescribir estilos de Bootstrap utilizando CSS o Sass para personal
    - Incluir estilos únicos en la navegación y el pie de página.
 
 3. **Entrega esperada:**  
-   - Una página personalizada con un diseño único que muestre la capacidad de sobrescribir y personalizar estilos de Bootstrap.
-
----
-
-¿Te gustaría que prepare una plantilla inicial para esta clase o ejemplos prácticos más detallados? 😊
+   - Una página personalizada con un diseño único que muestre la capacidad de sobrescribir y personalizar estilos de Bootstrap. 😊

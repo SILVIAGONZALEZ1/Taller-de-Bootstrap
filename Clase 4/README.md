@@ -125,57 +125,7 @@
    - Radios para opciones de suscripción.  
    - Botón de enviar.  
 
-### **Estructura de ejemplo:**  
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Registro</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <div class="container mt-5">
-        <h1 class="text-center">Formulario de Registro</h1>
-        <form class="mt-4">
-            <div class="row g-3">
-                <div class="col-md-6">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
-                </div>
-                <div class="col-md-6">
-                    <label for="apellido" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="apellido" placeholder="Apellido">
-                </div>
-            </div>
-            <div class="mb-3 mt-3">
-                <label for="email" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
-            </div>
-            <div class="mb-3">
-                <label for="password" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="password" placeholder="Contraseña">
-            </div>
-            <div class="mb-3">
-                <label for="pais" class="form-label">País</label>
-                <select class="form-select" id="pais">
-                    <option selected>Selecciona tu país</option>
-                    <option value="1">México</option>
-                    <option value="2">Argentina</option>
-                    <option value="3">España</option>
-                </select>
-            </div>
-            <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" id="terminos">
-                <label class="form-check-label" for="terminos">Acepto los términos y condiciones</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Registrarse</button>
-        </form>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-```
+### **Estructura de ejemplo: ver index_4.html**  
+
 
 😊
